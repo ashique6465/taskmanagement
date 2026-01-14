@@ -2,6 +2,8 @@
 
 TaskBoard is a full-stack task management platform that allows users to create organizations, invite members, manage tasks, and control access using subscription-based plans.
 
+---
+
 ## 🚀 Features
 - Organization creation and member invitations
 - Task creation, assignment, and status tracking (To-Do / In-Progress / Done)
@@ -9,26 +11,34 @@ TaskBoard is a full-stack task management platform that allows users to create o
 - Subscription-based member limits using Clerk
 - Secure authentication and authorization
 
+---
+
 ## 🛠 Tech Stack
-- Backend: FastAPI, Python
-- Frontend: React.js, Tailwind CSS
-- Auth & Subscriptions: Clerk
-- Database: PostgreSQL / SQLite
+- **Backend:** FastAPI, Python
+- **Frontend:** React.js, Tailwind CSS
+- **Auth & Subscriptions:** Clerk
+- **Database:** PostgreSQL / SQLite
+
+---
 
 ## 📸 Screenshots
 
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](./screenshots/dashboard.png)
 
-### Subscription
-![Tasks](screenshots/subscription.png)
+### Task Management
+![Tasks](./screenshots/tasks.png)
 
 ### Organization & Members
-![Organization](screenshots/organization.png)
+![Organization](./screenshots/organization.png)
+
+---
 
 ## ⚙️ Setup Instructions
 
 ### Backend
 ```bash
-pip install -r requirements.txt
+cd backend
+uv venv
+uv sync
 uvicorn main:app --reload
