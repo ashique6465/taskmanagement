@@ -57,6 +57,8 @@ async def get_current_user(request: Request) -> AuthUser:
     org_id = claims.get("org_id")
     org_permissions = claims.get("permissions") or claims.get("org_permissions") or []
 
+    print("RAW ORG PERMISSIONS FROM JWT:", org_permissions)
+
     if not user_id:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED, detail="Not authenticated"
