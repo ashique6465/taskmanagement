@@ -20,8 +20,8 @@ TaskBoard is a full-stack task management platform that allows users to create o
 ### Dashboard
 ![Dashboard](screenshots/dashboard.png)
 
-### Task Management
-![Tasks](screenshots/tasks.png)
+### Subscription
+![Tasks](screenshots/subscription.png)
 
 ### Organization & Members
 ![Organization](screenshots/organization.png)
